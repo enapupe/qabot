@@ -1,0 +1,21 @@
+{
+  "name": "qabot",
+  "version": "1.0.0",
+  "description": "manages qa deployment queue",
+  "main": "index.js",
+  "author": "enapupe",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "nodegit": "^0.20.3",
+    "slackbots": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "jest": "^22.4.0"
+  }
+}
