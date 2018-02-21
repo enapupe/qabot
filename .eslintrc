@@ -4,6 +4,9 @@
     "es6": true,
     "jest": true
   },
+  "globals": {
+    "bot": true,
+  },
   "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "rules": {

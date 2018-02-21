@@ -1,10 +1,10 @@
 const git = require('nodegit')
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || 'e83414a457126c6d0fa1b4725de7088c6ce8356d'
-const TARGET_BRANCH = process.env.TARGET_BRANCH || 'nodegit'
+const TARGET_BRANCH = process.env.TARGET_BRANCH || 'qa'
 const REPO_URL = process.env.REPO_URL || 'https://github.com/enapupe/nodegit-playground.git'
 const SHA_LENGTH = 7
-const REPO_PATH = './tmp'
+const REPO_PATH = '../tmp'
 
 const credentials = () => git.Cred.userpassPlaintextNew(GITHUB_TOKEN, 'x-oauth-basic')
 const clone = async () => {

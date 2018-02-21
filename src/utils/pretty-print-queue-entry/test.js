@@ -1,3 +1,7 @@
 const fn = require('.')
 
-expect(fn(bot, { user: 'aaa', branch: 'branch/name' })).toBe('seila')
+test('prettyPrintQueueEntry', () => {
+  expect(fn({ user: { id: 'U9BMJNVFW', name: 'iacamigevaerd' }, branch: 'brancha/name' })).toEqual(
+    `\`brancha/name (iacamigevaerd)\``
+  )
+})
